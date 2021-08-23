@@ -1,0 +1,32 @@
+import java.util.*;
+class Employee {
+  String name;
+  float salary;
+  String address;
+  int year;
+}
+
+public class main{
+  public static void main(String args[]){
+    Scanner sc =new Scanner(System.in);
+    Employee a[]= new Employee[3];
+
+    
+    for (int i=0;i<3;i++){
+    a[i] =new Employee();
+    System.out.println("Enter the Employee Name:");
+    a[i].name=sc.next();
+    System.out.println("Enter the Year of joining:");
+    a[i].year=sc.nextInt();
+    System.out.println("Enter the Salary:");
+    a[i].salary=sc.nextFloat();
+    System.out.println("Enter the Employee Address:");
+    a[i].address=sc.next();
+  }
+  System.out.println("\n EMPLOYEE DETAILS");
+  for (int i=0; i<3;i++){
+    System.out.println("Employee Name Year Salary and Address:"+a[i].name+" "+a[i].year+" "+a[i].salary+" "+a[i].address);
+    
+  }
+}
+}
